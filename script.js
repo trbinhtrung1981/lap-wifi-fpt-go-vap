@@ -1,0 +1,1 @@
+console.log("Website WiFi FPT đã chạy thành công!");
