@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tin tức WiFi FPT Gò Vấp | Trung Agency</title>
+
+    <meta name="description" content="Tin tức, hướng dẫn, kinh nghiệm sử dụng Internet và WiFi FPT tại Gò Vấp, Quận 12.">
+    <meta name="keywords" content="Tin tức WiFi FPT, WiFi FPT Gò Vấp, Internet FPT, Trung Agency">
+
+    <!-- Thêm Font Awesome để có icon đẹp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ==================== CẤU HÌNH GIAO DIỆN CHUNG ==================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f8fafc;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #0b3a77, #0056b3);
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* ==================== KHU VỰC DANH SÁCH TIN TỨC (CARDS) ==================== */
+        .news {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 24px;
+            color: #0b3a77;
+            margin-bottom: 30px;
+            font-weight: bold;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #ff6600;
+            margin: 10px auto 0;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,.05);
+            border: 1px solid #e2e8f0;
+            transition: .3s;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 25px rgba(0,0,0,.12);
+        }
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .card h2 {
+            font-size: 18px;
+            color: #0b3a77;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
+        .card p {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .btn-news {
+            display: inline-block;
+            margin-top: 15px;
+            background: #ff6600;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.2s;
+        }
+        .btn-news:hover {
+            background: #e05500;
+        }
+
+        /* ==================== TỐI ƯU KHUNG BÀI VIẾT CHI TIẾT (SEO ARTICLE) ==================== */
+        .seo-article {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+            border: 1px solid #e2e8f0;
+        }
+        .seo-article h2 {
+            font-size: 24px;
+            color: #0b3a77;
+            margin-bottom: 20px;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+        .seo-article h3 {
+            font-size: 19px;
+            color: #0b3a77;
+            margin: 25px 0 15px 0;
+            font-weight: bold;
+            border-left: 4px solid #ff6600;
+            padding-left: 12px;
+        }
+        .seo-article p {
+            font-size: 15px;
+            color: #4a5568;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .seo-article ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 25px;
+        }
+        .seo-article ul li {
+            font-size: 15px;
+            color: #4a5568;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+        /* Thêm icon tick xanh chuẩn SEO cho danh sách */
+        .seo-article ul li::before {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: #10b981;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .seo-article strong {
+            color: #1e293b;
+        }
+
+        /* ==================== CHÂN TRANG FOOTER ==================== */
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 14px;
+            border-top: 3px solid #ff6600;
+        }
+        footer a {
+            color: #ff6600;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>TIN TỨC & KHUYẾN MÃI TRUNG AGENCY</h1>
+</header>
+
+<!-- DANH SÁCH BÀI VIẾT (DẠNG LƯỚI CARD) -->
+<section class="news">
+    <h2 class="section-title">BÀI VIẾT MỚI NHẤT</h2>
+    <div class="news-grid">
+
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="images/lap-wifi-fpt-go-vap.jpg" alt="Lắp WiFi FPT Gò Vấp">
+            <div class="card-content">
+                <h2>Lắp WiFi FPT Gò Vấp – Những điều cần biết</h2>
+                <p>Hướng dẫn đăng ký, bảng giá, quy trình lắp đặt và các ưu đãi mới nhất dành cho khách hàng tại Gò Vấp.</p>
+                <a href="tin-tuc/lap-wifi-fpt-go-vap.html" class="btn-news">Đọc tiếp <i class="fa-solid fa-arrow-right" style="font-size: 11px; margin-left: 5px;"></i></a>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="images/wifi6.jpg" alt="WiFi 6">
+            <div class="card-content">
+                <h2>Có nên dùng WiFi 6?</h2>
+                <p>WiFi 6 giúp tốc độ nhanh hơn, ổn định hơn và kết nối được nhiều thiết bị cùng lúc mà không lo nhiễu sóng.</p>
+                <a href="tin-tuc/wifi6.html" class="btn-news">Đọc tiếp <i class="fa-solid fa-arrow-right" style="font-size: 11px; margin-left: 5px;"></i></a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="images/goi-cuoc-fpt.jpg" alt="Gói cước">
+            <div class="card-content">
+                <h2>Nên chọn gói WiFi FPT nào?</h2>
+                <p>So sánh các gói Internet FPT dành cho gia đình, quán cà phê và doanh nghiệp tối ưu chi phí hiệu quả.</p>
+                <a href="tin-tuc/goi-cuoc-fpt.html" class="btn-news">Đọc tiếp <i class="fa-solid fa-arrow-right" style="font-size: 11px; margin-left: 5px;"></i></a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- KHU VỰC NỘI DUNG CHI TIẾT BÀI VIẾT CHUẨN SEO -->
+<article class="seo-article">
+    <h2>Ưu Đãi Lắp WiFi FPT Gò Vấp &amp; Quận 12 Mới Nhất: Tặng Đến 2 Tháng Cước!</h2>
+
+    <p>
+        Nếu bạn đang tìm kiếm một giải pháp Internet tốc độ cao, ổn định với nhiều ưu đãi hấp dẫn,
+        dịch vụ <strong>lắp WiFi FPT Gò Vấp</strong> và
+        <strong>lắp WiFi FPT Quận 12</strong> là lựa chọn đáng cân nhắc.
+        <strong>Trung Agency</strong> hỗ trợ tư vấn gói cước phù hợp, thủ tục nhanh chóng và hỗ trợ lắp đặt tận nơi.
+    </p>
+
+    <h3>Vì Sao Nên Chọn Lắp Mạng WiFi FPT Tại Gò Vấp và Quận 12?</h3>
+
+    <p>
+        Hạ tầng cáp quang của FPT Telecom được đầu tư đồng bộ, mang đến kết nối ổn định cho nhu cầu học tập,
+        làm việc, giải trí và kinh doanh. <strong>Trung Agency</strong> luôn hỗ trợ khách hàng lựa chọn
+        gói cước phù hợp với nhu cầu sử dụng.
+    </p>
+
+    <ul>
+        <li><strong>Tốc độ vượt trội:</strong> Băng thông từ 150 Mbps trở lên.</li>
+        <li><strong>Thiết bị thế hệ mới:</strong> Trang bị modem WiFi 6 hiện đại.</li>
+        <li><strong>Lắp đặt nhanh:</strong> Hỗ trợ khảo sát và lắp đặt trong thời gian sớm nhất.</li>
+        <li><strong>Hỗ trợ kỹ thuật:</strong> Đội ngũ kỹ thuật hỗ trợ khi cần thiết.</li>
+    </ul>
+
+    <h3>Bảng Giá Gói Cước WiFi FPT Giá Rẻ Cho Cá Nhân &amp; Gia Đình</h3>
+
+    <p>
+        Để giúp khách hàng dễ dàng lựa chọn, FPT cung cấp nhiều gói
+        <strong>WiFi FPT giá rẻ</strong> phù hợp cho cá nhân, gia đình,
+        căn hộ, cửa hàng và doanh nghiệp với mức chi phí linh hoạt. Bạn có thể liên hệ trực tiếp hotline để nhận ngay báo giá chính xác theo từng thời điểm.
+    </p>
+</article>
+
+<!-- CHÂN TRANG FOOTER CHUẨN MÀU ĐỒNG BỘ -->
+<footer>
+    © 2026 Trung Agency - Hotline: <a href="tel:0919502481">0919.502.481</a>. Tất cả các quyền được bảo hộ.
+</footer>
+
+</body>
+</html>
