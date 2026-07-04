@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://trbinhtrung1981.github.io/lap-wifi-fpt-go-vap/sitemap.xml
