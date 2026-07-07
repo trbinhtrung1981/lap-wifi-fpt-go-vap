@@ -387,51 +387,65 @@ padding:25px;
         </div>
     </section>
 
+<!-- ĐĂNG KÝ NGAY DƯỚI BANNER -->
 <section class="quick-register" id="dang-ky-banner">
-    <div class="container">
+    <div class="register-box"> <!-- Thêm hộp bọc ngoài để ăn theo CSS .register-box -->
 
-        <h2>🚀 Đăng ký WiFi FPT ngay </h2>
-        <p>Điền thông tin, Trung Agency sẽ liên hệ tư vấn miễn phí trong thời gian sớm nhất.</p>
+        <div class="register-title"> <!-- Thêm bộ tiêu đề để ăn theo CSS .register-title -->
+            <h2>🚀 Đăng ký WiFi FPT ngay hôm nay</h2>
+            <p>Điền thông tin, Trung Agency sẽ liên hệ tư vấn miễn phí trong thời gian sớm nhất.</p>
+        </div>
 
-        <form action="https://formsubmit.co/trungagencyfpt@gmail.com" method="POST">
+        <form action="https://formsubmit.co/youremail@gmail.com" method="POST">
             
-            <!-- CẤU HÌNH FORMSUBMIT CHUYÊN BIỆT CHO ĐẦU TRANG -->
+            <!-- CẤU HÌNH FORMSUBMIT ẨN -->
             <input type="hidden" name="_next" value="https://trbinhtrung1981.github.io/cam-on.html">
             <input type="hidden" name="_captcha" value="false">
-            <!-- Đổi tiêu đề mail thành "ĐẦU TRANG" để anh dễ nhận biết khách đăng ký ở vị trí này -->
             <input type="hidden" name="_subject" value="⚡ Khách Đăng Ký Ở ĐẦU TRANG (Dưới Banner)">
 
-            <!-- CÁC TRƯỜNG NHẬP THÔNG TIN -->
-            <div class="form-group">
+            <!-- KHU VỰC CHIA CỘT GRID -->
+            <div class="form-grid">
 
+                <!-- Ô Họ và tên -->
                 <div class="form-group">
-                        <label>👤 Họ và tên</label>
-                        <input type="text" name="Họ và tên" required>
-                    </div>
-                
-                        <label>📞 Số điện thoại</label>
-                        <input type="tel" name="Số điện thoại" required>
-                    </div>
-            
-            <div class="form-group full">
-                        <label>📍 Địa chỉ lắp đặt</label>
-                        <input type="text" name="Địa chỉ">
-                    </div>
+                    <input type="text" name="Họ và tên" placeholder="👤 Họ và tên" required>
+                </div>
 
-            <select name="Gói cước" required>
-    <option value="">📶 Chọn gói cước</option>
-    <option value="Gói GIGA (300Mbps)">Gói GIGA (300Mbps) - Tiết kiệm</option>
-    <option value="Gói SKY (1Gbps/300Mbps)">Gói SKY (Tốc độ lên đến 1Gbps)</option>
-    <option value="Gói META (1Gbps/1Gbps)">Gói META (Siêu tốc độ 1Gbps)</option>
-    <option value="Gói LUX (Chuyên biệt lớn)">Gói LUX (Chuyên biệt biệt thự/doanh nghiệp)</option>
-    <option value="Combo Internet + Truyền hình">Combo Internet + Truyền hình FPT</option>
-    <option value="Chưa biết - Cần tư vấn">Chưa biết - Cần tư vấn</option>
-</select>
-            <button type="submit">🚀 Đăng ký ngay</button>
+                <!-- Ô Số điện thoại -->
+                <div class="form-group">
+                    <input type="tel" name="Số điện thoại" placeholder="📞 Số điện thoại" required>
+                </div>
+
+                <!-- Ô Địa chỉ lắp đặt (Chiếm hết 2 cột nên thêm class "full") -->
+                <div class="form-group full">
+                    <input type="text" name="Địa chỉ lắp đặt" placeholder="📍 Địa chỉ lắp đặt hoàn chỉnh" required>
+                </div>
+
+                <!-- Ô Chọn Gói Cước (Chiếm hết 2 cột nên thêm class "full") -->
+                <div class="form-group full">
+                    <select name="Gói cước" required>
+                        <option value="">📶 Chọn gói cước</option>
+                        <option value="Gói GIGA (300Mbps)">Gói GIGA (300Mbps) - Tiết kiệm</option>
+                        <option value="Gói SKY (1Gbps/300Mbps)">Gói SKY (Tốc độ lên đến 1Gbps)</option>
+                        <option value="Gói META (1Gbps/1Gbps)">Gói META (Siêu tốc độ 1Gbps)</option>
+                        <option value="Gói LUX (Chuyên biệt lớn)">Gói LUX (Chuyên biệt biệt thự/doanh nghiệp)</option>
+                        <option value="Combo Internet + Truyền hình">Combo Internet + Truyền hình FPT</option>
+                        <option value="Chưa biết - Cần tư vấn">Chưa biết - Cần tư vấn</option>
+                    </select>
+                </div>
+
+            </div> <!-- KẾT THÚC form-grid -->
+
+            <!-- Nút bấm (Thêm class "register-btn" để nhận màu cam và hiệu ứng hover) -->
+            <button type="submit" class="register-btn">
+                🚀 GỬI YÊU CẦU ĐĂNG KÝ
+            </button>
+
         </form>
 
     </div>
 </section>
+    
     <!-- GIỚI THIỆU DOANH NGHIỆP -->
     <section class="about" id="gioi-thieu" style="background-color: #ffffff;">
         <div class="container" style="max-width: 1100px;">
